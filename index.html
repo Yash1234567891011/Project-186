@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <a-scene id="scene">
+        <a-sky color="#000000"></a-sky>
+        <a-camera position="0 0 50"></a-camera>
+        <a-entity position="-40 1 0" spe-particles="
+        color:red,blue,orange,purple,green,yellow;
+        distribution:sphere;
+        randomize-velocity:true;
+        radius:2;
+        particle-count:950;
+        velocity:1;
+        velocity-spread:15;
+        drag:1;
+        max-age:2;
+        duration:-1;
+        blending:additive;
+        active-multiplier:1000;
+        size:1,1,1,0;
+        "></a-entity>
+        <a-entity position="15 1 0" text="font:monoid;value:Hii I am Yash;width:65;height:15;color:red">
+        </a-entity>
+         <a-entity position="40 1 0" spe-particles="
+        color:yellow,green,purple,blue,orange,red;
+        distribution:sphere;
+        randomize-velocity:true;
+        radius:2;
+        particle-count:950;
+        velocity:1;
+        velocity-spread:15;
+        drag:1;
+        max-age:2;
+        duration:-1;
+        blending:additive;
+        active-multiplier:1000;
+        size:1,1,1,0;
+        "></a-entity>
+    </a-scene>
+</body>
+</html>
